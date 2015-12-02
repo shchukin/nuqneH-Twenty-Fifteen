@@ -18,6 +18,21 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
+
+				<h2 class="widget-title">
+				<?php
+					$curLang = substr(get_bloginfo( 'language' ), 0, 2);
+                    switch ($curLang) {
+                        case "en":
+                            echo 'Category';
+                            break;
+                        case "ru":
+                            echo 'Категории';
+                            break;
+                    }
+				?>
+				</h2>
+
 				<?php
 					// Primary navigation menu.
 					wp_nav_menu( array(
