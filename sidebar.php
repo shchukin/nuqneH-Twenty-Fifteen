@@ -10,6 +10,12 @@
 if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
 	<div id="secondary" class="secondary">
 
+		<?php if ( is_active_sidebar( 'before-nav-1' ) ) : ?>
+			<div id="widget-area" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'before-nav-1' ); ?>
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
