@@ -1,0 +1,13 @@
+/*  
+Theme Name: nuqneH Twenty Fifteen
+Version: 1.0
+Theme URI: http://nuqneh.com
+Description: Twenty Fifteen child theme for nuqneH.com
+Author: Anton Cypher Shchukin
+Author URI: http://nuqneh.com
+Template: twentyfifteen
+*/
+
+
+/* Import layout */
+@import url(../twentyfifteen/style.css);
