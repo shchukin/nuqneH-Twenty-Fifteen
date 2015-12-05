@@ -11,7 +11,7 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 	<div id="secondary" class="secondary">
 
 		<?php if ( is_active_sidebar( 'before-nav-1' ) ) : ?>
-			<div id="widget-area" class="widget-area" role="complementary">
+			<div class="widget-area widget-area_id_before-nav-1" role="complementary">
 				<?php dynamic_sidebar( 'before-nav-1' ); ?>
 			</div><!-- .widget-area -->
 		<?php endif; ?>
