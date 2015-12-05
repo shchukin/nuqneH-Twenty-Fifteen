@@ -58,3 +58,10 @@
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
+
+
+<?php if ( is_single() && is_active_sidebar( 'after-article-1' ) ) : ?>
+	<div class="comments-area widget-area widget-area_id_after-article-1">
+		<?php dynamic_sidebar( 'after-article-1' ); ?>
+	</div><!-- .widget-area -->
+<?php endif; ?>
