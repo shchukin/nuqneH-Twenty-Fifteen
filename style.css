@@ -24,3 +24,19 @@ Template: twentyfifteen
     margin: 0;
     padding: 0;
 }
+
+
+.region {
+
+}
+
+.region .widget {
+    margin: 0;
+    padding: 0;
+}
+
+.region_id_after-post-footer-1 {
+    margin-top: 9px;
+}
+
+

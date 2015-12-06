@@ -21,6 +21,15 @@ function nuqneH_widgets_init() {
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
+    register_sidebar( array(
+        'name'          => __( 'After Post Footer', 'nuqneH-Twenty-Fifteen' ),
+        'id'            => 'after-post-footer-1',
+        'description'   => __( 'This is the area located right after post footer.', 'nuqneH-Twenty-Fifteen' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 }
 
 add_action( 'widgets_init', 'nuqneH_widgets_init' );

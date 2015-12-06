@@ -55,6 +55,13 @@
 	<footer class="entry-footer">
 		<?php twentyfifteen_entry_meta(); ?>
 		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+
+		<?php if ( is_single() && is_active_sidebar( 'after-post-footer-1' ) ) : ?>
+			<div class="region region_id_after-post-footer-1">
+				<?php dynamic_sidebar( 'after-post-footer-1' ); ?>
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
