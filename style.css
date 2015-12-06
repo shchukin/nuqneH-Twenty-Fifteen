@@ -16,26 +16,17 @@ Template: twentyfifteen
 	display: none;
 }
 
-.widget-area_id_after-article-1 {
-    padding: 0;
-}
-
-.widget-area_id_after-article-1 .widget {
-    margin: 0;
-    padding: 0;
-}
 
 
 .region {
 
 }
 
-.region .widget {
-    margin: 0;
+.region_id_after-article {
     padding: 0;
 }
 
-.region_id_after-post-footer-1 {
+.region_id_after-post-footer {
     margin-top: 9px;
 }
 

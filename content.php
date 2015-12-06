@@ -57,7 +57,7 @@
 		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php if ( is_single() && is_active_sidebar( 'after-post-footer-1' ) ) : ?>
-			<div class="region region_id_after-post-footer-1">
+			<div class="region region_id_after-post-footer">
 				<?php dynamic_sidebar( 'after-post-footer-1' ); ?>
 			</div><!-- .widget-area -->
 		<?php endif; ?>
@@ -68,7 +68,7 @@
 
 
 <?php if ( is_single() && is_active_sidebar( 'after-article-1' ) ) : ?>
-	<div class="comments-area widget-area widget-area_id_after-article-1">
+	<div class="comments-area region region_id_after-article">
 		<?php dynamic_sidebar( 'after-article-1' ); ?>
 	</div><!-- .widget-area -->
 <?php endif; ?>

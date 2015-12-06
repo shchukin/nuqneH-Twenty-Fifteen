@@ -6,7 +6,7 @@ function nuqneH_widgets_init() {
     register_sidebar( array(
         'name'          => __( 'Before Navigation', 'nuqneH-Twenty-Fifteen' ),
         'id'            => 'before-nav-1',
-        'description'   => __( 'This is the area located right before primary navigation.', 'nuqneH-Twenty-Fifteen' ),
+        'description'   => __( 'Duplicate of original widget area, but before navigation.', 'nuqneH-Twenty-Fifteen' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h2 class="widget-title">',
@@ -15,20 +15,20 @@ function nuqneH_widgets_init() {
     register_sidebar( array(
         'name'          => __( 'After Article', 'nuqneH-Twenty-Fifteen' ),
         'id'            => 'after-article-1',
-        'description'   => __( 'This is the area located right after an article.', 'nuqneH-Twenty-Fifteen' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'description'   => __( 'Comments area', 'nuqneH-Twenty-Fifteen' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
     ) );
     register_sidebar( array(
         'name'          => __( 'After Post Footer', 'nuqneH-Twenty-Fifteen' ),
         'id'            => 'after-post-footer-1',
-        'description'   => __( 'This is the area located right after post footer.', 'nuqneH-Twenty-Fifteen' ),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'description'   => __( 'Good for like buttons', 'nuqneH-Twenty-Fifteen' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
     ) );
 }
 
