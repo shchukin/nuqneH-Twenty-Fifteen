@@ -1,6 +1,17 @@
 <?php
 
-/* widget areas */
+/*
+    because wp_get_attachment_image_src() return wrong dimensions
+    http://wordpress.stackexchange.com/questions/167525/why-is-wp-get-attachment-image-src-returning-wrong-dimensions
+    http://wordpress.stackexchange.com/questions/48075/settings-in-media-settings-is-ignored-when-inserting-images
+ */
+$content_width = 1200;
+
+
+
+/*
+    widget areas
+*/
 
 function nuqneH_widgets_init() {
     register_sidebar( array(
