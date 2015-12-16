@@ -12,10 +12,6 @@ Template: twentyfifteen
 /* Import layout */
 @import url(../twentyfifteen/style.css);
 
-.taxonomy-description {
-	display: none;
-}
-
 
 
 .region {
