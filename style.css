@@ -77,12 +77,8 @@ Template: twentyfifteen
 
 
 
-/* Tag icons */
-
-.tags-links:before {
-    display: none;
-}
-
+/* Icons */
+.tag .page-title:before,
 .tag-item:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -99,6 +95,13 @@ Template: twentyfifteen
     text-transform: none;
     vertical-align: top;
 }
+
+/* Tag list tag icons */
+
+.tags-links:before {
+    display: none;
+}
+
 
 .tag-item:before {
     margin-right: 2px;
@@ -119,4 +122,19 @@ Template: twentyfifteen
 
 .tag-item:last-child {
     margin-right: 0;
+}
+
+
+/* Page title tag icon */
+
+.tag .page-title {
+ 
+}
+
+.tag .page-title:before {
+    content: '\f302';
+    font-size: 1em;
+    margin-right: .25em;
+    position: relative;
+    top: 2px;
 }
