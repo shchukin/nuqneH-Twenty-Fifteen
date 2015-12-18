@@ -69,6 +69,8 @@
 
 <?php if ( is_single() && is_active_sidebar( 'after-article-1' ) ) : ?>
 	<div class="comments-area region region_id_after-article">
-		<?php dynamic_sidebar( 'after-article-1' ); ?>
-	</div><!-- .widget-area -->
+		<div class="region__inner">
+			<?php dynamic_sidebar( 'after-article-1' ); ?>
+		</div><!-- .widget-area -->
+	</div>
 <?php endif; ?>
