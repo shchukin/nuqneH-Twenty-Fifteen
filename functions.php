@@ -11,6 +11,18 @@ $content_width = 1200;
 
 
 /*
+    register JS
+*/
+function nuqneH_add_script() {
+    wp_enqueue_script( 'nuqneh-main', get_stylesheet_directory_uri() . '/script.js', array('jquery') );
+}
+
+add_action( 'wp_enqueue_scripts', 'nuqneH_add_script' );
+
+
+
+
+/*
     widget areas
 */
 
