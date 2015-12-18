@@ -15,15 +15,6 @@ $content_width = 1200;
 
 function nuqneH_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Before Navigation', 'nuqneH-Twenty-Fifteen' ),
-        'id'            => 'before-nav-1',
-        'description'   => __( 'Duplicate of original widget area, but before navigation.', 'nuqneH-Twenty-Fifteen' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</aside>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
-    register_sidebar( array(
         'name'          => __( 'After Article', 'nuqneH-Twenty-Fifteen' ),
         'id'            => 'after-article-1',
         'description'   => __( 'Comments area', 'nuqneH-Twenty-Fifteen' ),
