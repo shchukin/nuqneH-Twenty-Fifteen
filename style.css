@@ -24,22 +24,25 @@ Template: twentyfifteen
 }
 
 
-
+.post-navigation,
 .region_id_after-article {
     background: none;
     box-shadow: none;
     padding: 0;
 }
 
+    .post-navigation .nav-links,
     .region_id_after-article .region__inner {
         background: #fff;
     }
 
 @media screen and (min-width: 38.75em) {
+    .post-navigation,
     .region_id_after-article {
         margin: 7.6923% 7.6923% 0;
     }
 
+    .post-navigation .nav-links,
     .region_id_after-article .region__inner {
         box-shadow: 0 0 1px rgba(0,0,0,.15);
     }
@@ -47,10 +50,12 @@ Template: twentyfifteen
 
 
 @media screen and (min-width: 46.25em) {
+    .post-navigation,
     .region_id_after-article {
 
     }
 
+    .post-navigation .nav-links,
     .region_id_after-article .region__inner {
         margin: 0 9.0909%;
     }
@@ -58,10 +63,12 @@ Template: twentyfifteen
 
 
 @media screen and (min-width: 59.6875em) {
+    .post-navigation,
     .region_id_after-article {
         margin: 8.3333% 8.3333% 0;
     }
 
+    .post-navigation .nav-links,
     .region_id_after-article .region__inner {
         margin: 0;
     }
@@ -70,11 +77,30 @@ Template: twentyfifteen
 }
 
 @media screen and (min-width: 68.75em) {
+    .post-navigation .nav-links,
     .region_id_after-article .region__inner {
         margin: 0 10%;
     }
 }
 
+
+
+.post-navigation .nav-links {
+    display: table;
+    table-layout: fixed;
+    height: 9em;
+}
+
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.post-navigation .meta-nav {
+    display: none;
+}
 
 
 /* Icons */
