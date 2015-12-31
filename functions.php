@@ -11,6 +11,17 @@ $content_width = 1650;
 
 
 /*
+ *   change 1600px limitation for srcset
+ */
+function new_srcset_max($max_width) {
+    return 1920;
+}
+
+add_filter('max_srcset_image_width', 'new_srcset_max');
+
+
+
+/*
     register JS
 */
 function nuqneH_add_script() {
