@@ -6,7 +6,7 @@
     http://wordpress.stackexchange.com/questions/48075/settings-in-media-settings-is-ignored-when-inserting-images
     this value should be max of all of thumbnail sizes
  */
-$content_width = 1650;
+$content_width = 1920;
 
 
 
