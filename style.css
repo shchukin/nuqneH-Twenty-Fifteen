@@ -92,6 +92,11 @@ Template: twentyfifteen
     table-layout: fixed;
     height: 9em;
 }
+
+.post-navigation .nav-links:before,
+.post-navigation .nav-links:after {
+    display: none;
+}
     .post-navigation .nav-previous,
     .post-navigation .nav-next {
         display: table-cell;
@@ -181,7 +186,7 @@ Template: twentyfifteen
 /* Attachmint page post navigation icon */
 
 .attachment .post-navigation .nav-previous .post-title:before {
-    font-size: inherit; 
+    font-size: inherit;
     content: '\f416';
 }
 
