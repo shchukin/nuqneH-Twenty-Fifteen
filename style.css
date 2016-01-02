@@ -85,22 +85,33 @@ Template: twentyfifteen
 
 
 
+/* Post navigation */
+
 .post-navigation .nav-links {
     display: table;
     table-layout: fixed;
     height: 9em;
 }
+    .post-navigation .nav-previous,
+    .post-navigation .nav-next {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle;
+    }
+        .post-navigation a {
 
-.post-navigation .nav-previous,
-.post-navigation .nav-next {
-    display: table-cell;
-    width: 50%;
-    vertical-align: middle;
-}
+        }
+            .post-navigation .meta-nav {
+                display: none;
+            }
 
-.post-navigation .meta-nav {
-    display: none;
-}
+            .post-navigation .post-title {
+                transform: translateY(-0.1em);
+            }
+
+            .post-navigation .nav-previous .post-title:before { content: '← '; }
+            .post-navigation .nav-next     .post-title:after  { content: ' →'; }
+
 
 
 /* Icons */
