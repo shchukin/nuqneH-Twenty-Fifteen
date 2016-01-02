@@ -13,6 +13,92 @@ Template: twentyfifteen
 @import url(../twentyfifteen/style.css);
 
 
+
+/* Icons */
+.tag .page-title:before,
+.tag-item:before,
+.attachment .entry-title:before,
+.attachment .post-navigation .nav-previous .post-title:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: "Genericons";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    speak: none;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    vertical-align: top;
+}
+
+
+/* Page title tag icon */
+
+.tag .page-title {
+
+}
+
+.tag .page-title:before {
+    content: '\f302';
+    font-size: 1em;
+    margin-right: .25em;
+    position: relative;
+    top: 2px;
+}
+
+
+/* Tag list tag icons */
+
+.tags-links:before {
+    display: none;
+}
+
+
+.tag-item:before {
+    margin-right: 2px;
+    position: relative;
+    content: '\f302';
+}
+
+@media screen and (min-width: 46.25em)   { .tag-item:before { top: 3px; } }
+@media screen and (min-width: 55em)      { .tag-item:before { top: 4px; } }
+@media screen and (min-width: 59.6875em) { .tag-item:before { top: 0;   } }
+@media screen and (min-width: 68.75em)   { .tag-item:before { top: 3px; } }
+@media screen and (min-width: 77.5em)    { .tag-item:before { top: 4px; } }
+
+
+.tag-item {
+    margin-right: .5em;
+}
+
+.tag-item:last-child {
+    margin-right: 0;
+}
+
+
+/* Attachment title icon */
+.attachment .entry-title:before {
+    margin-top: .15em;
+    font-size: inherit;
+    content: '\f416';
+}
+
+
+/* Attachment page post navigation icon */
+
+.attachment .post-navigation .nav-previous .post-title:before {
+    font-size: inherit;
+    margin-right: .2em;
+    transform: translateY(.04em);
+    content: '\f467';
+}
+
+
+
 /* Widget areas */
 
 .region {
@@ -118,86 +204,7 @@ Template: twentyfifteen
             .post-navigation .nav-next     .post-title:after  { content: ' →'; }
 
 
-/* Icons */
-.tag .page-title:before,
-.tag-item:before,
-.attachment .entry-title:before,
-.attachment .post-navigation .nav-previous .post-title:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-family: "Genericons";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-    speak: none;
-    text-align: center;
-    text-decoration: inherit;
-    text-transform: none;
-    vertical-align: top;
-}
 
-/* Tag list tag icons */
-
-.tags-links:before {
-    display: none;
-}
-
-
-.tag-item:before {
-    margin-right: 2px;
-    position: relative;
-    content: '\f302';
-}
-
-@media screen and (min-width: 46.25em)   { .tag-item:before { top: 3px; } }
-@media screen and (min-width: 55em)      { .tag-item:before { top: 4px; } }
-@media screen and (min-width: 59.6875em) { .tag-item:before { top: 0;   } }
-@media screen and (min-width: 68.75em)   { .tag-item:before { top: 3px; } }
-@media screen and (min-width: 77.5em)    { .tag-item:before { top: 4px; } }
-
-
-.tag-item {
-    margin-right: .5em;
-}
-
-.tag-item:last-child {
-    margin-right: 0;
-}
-
-
-/* Page title tag icon */
-
-.tag .page-title {
- 
-}
-
-.tag .page-title:before {
-    content: '\f302';
-    font-size: 1em;
-    margin-right: .25em;
-    position: relative;
-    top: 2px;
-}
-
-/* Attachment title icon */
-.attachment .entry-title:before {
-    margin-top: .15em;
-    font-size: inherit;
-    content: '\f416';
-}
-
-
-/* Attachmint page post navigation icon */
-
-.attachment .post-navigation .nav-previous .post-title:before {
-    font-size: inherit;
-    margin-right: .2em;
-    transform: translateY(.04em);
-    content: '\f467';
-}
 
 
 
