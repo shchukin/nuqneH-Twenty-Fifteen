@@ -121,6 +121,7 @@ Template: twentyfifteen
 /* Icons */
 .tag .page-title:before,
 .tag-item:before,
+.attachment .entry-title:before,
 .attachment .post-navigation .nav-previous .post-title:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -181,13 +182,21 @@ Template: twentyfifteen
     top: 2px;
 }
 
+/* Attachment title icon */
+.attachment .entry-title:before {
+    margin-top: .15em;
+    font-size: inherit;
+    content: '\f416';
+}
 
 
 /* Attachmint page post navigation icon */
 
 .attachment .post-navigation .nav-previous .post-title:before {
     font-size: inherit;
-    content: '\f416';
+    margin-right: .2em;
+    transform: translateY(.04em);
+    content: '\f467';
 }
 
 
