@@ -58,6 +58,10 @@ Template: twentyfifteen
 }
 
 
+.tag-item {
+    white-space: nowrap;
+}
+
 .tag-item:before {
     margin-right: 2px;
     position: relative;
