@@ -304,12 +304,32 @@ Template: twentyfifteen
     margin-bottom: 0;
 }
 
-.faded {
-    color: #707070;
-    color: rgba(51, 51, 51, 0.7);
+
+/* Featured list */
+
+.featured-list {
+
 }
+    .featured-list__item {
+        margin-top: 15px;
+        margin-top: 1.5rem;
+    }
+
+    .featured-list__item:first-child {
+        margin-top: 0;
+    }
+        .featured-list__note {
+            display: block;
+            margin-top: 5px;
+            margin-top: 0.5rem;
+            color: #707070;
+            color: rgba(51, 51, 51, 0.7);
+        }
 
 
-
-
-
+        @media (min-width: 46.25em) {
+            .featured-list__note {
+                margin-top: 0;
+                display: inline;
+            }
+        }
