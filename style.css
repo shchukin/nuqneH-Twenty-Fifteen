@@ -333,3 +333,12 @@ Template: twentyfifteen
                 display: inline;
             }
         }
+
+/* Cancel hyphens */
+
+.entry-content, .entry-summary, .page-content, .comment-content {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
