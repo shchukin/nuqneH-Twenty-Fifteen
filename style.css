@@ -346,3 +346,13 @@ Template: twentyfifteen
     -ms-hyphens: none;
     hyphens: none;
 }
+
+
+/* Images background */
+
+.entry-content a img,
+.entry-summary a img,
+.page-content a img,
+.comment-content a img {
+    background-color: #333;
+}
